@@ -2,9 +2,17 @@ POST http://localhost:3333/events
 Content-Type: application/json
 
 {
-    "title": "NLW unite",
+    "title": "Testando criação de attendee",
     "details": "Este é um evento",
     "maximumAttendees": 100
 }
 
 ###
+
+POST http://localhost:3333/events/fb33ed19-b082-430e-8e27-b7eef69549ba/attendees
+Content-Type: application/json
+
+{
+    "name": "Helcio Anicio",
+    "email": "helcio@helcio.com"
+}
