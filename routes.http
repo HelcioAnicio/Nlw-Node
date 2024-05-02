@@ -2,17 +2,27 @@ POST http://localhost:3333/events
 Content-Type: application/json
 
 {
-    "title": "Testando criação de attendee",
-    "details": "Este é um evento",
-    "maximumAttendees": 100
+    "title": "Novo evento 2",
+    "details": null,
+    "maximumAttendees": 1
 }
 
 ###
 
-POST http://localhost:3333/events/fb33ed19-b082-430e-8e27-b7eef69549ba/attendees
+POST http://localhost:3333/events/41ea2464-08ed-46eb-98e8-fe8487cd7a51/attendees
 Content-Type: application/json
 
 {
     "name": "Helcio Anicio",
-    "email": "helcio@helcio.com"
+    "email": "helci2@helcio.com"
 }
+
+
+###
+
+GET http://localhost:3333/events/41ea2464-08ed-46eb-98e8-fe8487cd7a51
+
+
+###
+
+GET http://localhost:3333/attendees/4/badge
